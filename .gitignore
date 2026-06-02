@@ -1,0 +1,219 @@
+# Axiom Infrastructure - Git Ignore File
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/settings.json
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.env
+.venv
+venv/
+
+# Node/JavaScript
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# Sensitive Files - DO NOT COMMIT
+*.key
+*.pem
+*.p12
+*.pfx
+credentials.json
+secrets.yml
+.env
+.env.local
+.env.*.local
+config/secrets/
+config/api-keys/
+
+# Financial & Sensitive Data
+*.xlsx.bak
+*.csv.bak
+financial-models/draft/
+financial-models/confidential/
+
+# Build outputs
+dist/
+build/
+*.pdf
+*.docx
+*.xlsx
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.backup
+*.orig
+*~
+
+# OS-specific
+.AppleDouble
+.LSOverride
+$RECYCLE.BIN/
+
+# Local development
+local-config/
+.local/
+.cache/
+
+# Compiled files
+*.class
+*.o
+*.a
+*.lib
+
+# Archive files (unless explicitly needed)
+*.zip
+*.tar.gz
+*.rar
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Lock files (except for production)
+Gemfile.lock
+poetry.lock
+
+# Dependency files
+vendor/
+node_modules/
+
+# Generated documentation
+docs/generated/
+docs/api/
+
+# IDE workspace settings (unless explicitly shared)
+.vscode/launch.json
+.vscode/settings.json
+.idea/workspace.xml
+
+# Test coverage
+coverage/
+.coverage
+htmlcov/
+
+# Compiled TypeScript
+*.js
+!config/*.js
+!scripts/*.js
+
+# Client/Server specific
+dist/
+build/
+*.bundle.js
+
+# Environment-specific configs
+config/*.local.*
+.env.*.local
+
+# Terraform/IaC files (if used)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars.json
+
+# Azure-specific
+.azure/
+*.publishsettings
+
+# AWS-specific
+.aws/
+
+# Git-related (backup files from merge conflicts)
+*.orig
+*.rej
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Sensitive business documents
+/**/confidential/
+/**/draft/
+/**/private/
+**/*-private.*
+**/*-confidential.*
+
+# Temporary working files
+**/*.wip
+**/*.scratch
+**/*-TEMP.*
+
+# Don't commit compiled/generated PDFs from source markdown
+docs/**/*.pdf
+
+# Client/contract specifics (should use separate private repo)
+clients/
+contracts/
+private-agreements/
+
+# Financial details (keep locally, use secure storage)
+financial-models/detailed/
+financial-models/actual-projections/
+cost-estimates/sensitive/
+
+# Personal notes
+notes/personal/
+scratch/
+
+# Analytics/tracking data
+.analytics/
+tracking-data/
+
+# Exception: DO NOT ignore
+!.github/
+!.gitignore
+!README.md
+!CONTRIBUTING.md
+!docs/
+!
