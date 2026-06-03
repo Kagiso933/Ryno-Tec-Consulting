@@ -1,6 +1,6 @@
 # RYNO-TEC CONSULTING - Business Plan
 
-Complete business strategy and planning documentation for Axiom Infrastructure (Pty) Ltd.
+Complete business strategy and planning documentation for Ryno-Tec Consulting (Pty) Ltd.
 
 ---
 
@@ -192,7 +192,7 @@ See [Financial Models](../financial-models/) for detailed projections.
 
 ## 📞 Contact
 
-**Axiom Infrastructure (Pty) Ltd**
+**Ryno-Tec Consulting (Pty) Ltd**
 - Email: info@ryno-tec-consulting.co.za
 - Founder: Kagiso Tshukudu (KG)
 - Status: Business planning phase (launch 2026)

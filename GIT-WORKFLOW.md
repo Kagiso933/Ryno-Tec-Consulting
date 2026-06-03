@@ -1,6 +1,6 @@
-# GIT WORKFLOW GUIDE - Axiom Infrastructure
+# GIT WORKFLOW GUIDE - Ryno-Tec Consulting
 
-A practical guide to using Git for managing the Axiom Infrastructure business plan and documentation.
+A practical guide to using Git for managing the Ryno-Tec Consulting business plan and documentation.
 
 ---
 

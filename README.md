@@ -1,6 +1,6 @@
 # RYNO-TEC CONSULTING
 
-**Axiom Infrastructure (Pty) Ltd** - Enterprise Infrastructure & Platform Engineering Consulting
+**Ryno-Tec Consulting (Pty) Ltd** - Enterprise Infrastructure & Platform Engineering Consulting
 
 A South African software infrastructure consulting firm specializing in platform engineering, modern workplace management, and AI infrastructure solutions.
 
@@ -8,7 +8,7 @@ A South African software infrastructure consulting firm specializing in platform
 
 ## 📋 Repository Overview
 
-This repository contains the complete business plan, strategy, and operational documentation for Axiom Infrastructure. It follows Git best practices for version control and collaborative development.
+This repository contains the complete business plan, strategy, and operational documentation for Ryno-Tec Consulting. It follows Git best practices for version control and collaborative development.
 
 ### Quick Navigation
 
@@ -301,7 +301,7 @@ git push origin main --tags
 
 ## 📜 License
 
-Proprietary - All rights reserved. © 2026 Axiom Infrastructure (Pty) Ltd
+Proprietary - All rights reserved. © 2026 Ryno-Tec Consulting (Pty) Ltd
 
 This business plan and associated documents are proprietary and confidential. Unauthorized reproduction, distribution, or disclosure is prohibited.
 

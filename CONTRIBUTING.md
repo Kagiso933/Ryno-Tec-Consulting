@@ -1,6 +1,6 @@
-# Contributing to Axiom Infrastructure Business Repository
+# Contributing to Ryno-Tec Consulting Business Repository
 
-Thank you for contributing to the Axiom Infrastructure business development! This document outlines how to work with this repository.
+Thank you for contributing to the Ryno-Tec Consulting business development! This document outlines how to work with this repository.
 
 ---
 
@@ -479,4 +479,4 @@ If sensitive data is accidentally committed:
 **Last Updated:** 2026-02-03  
 **Next Review:** 2026-06-03
 
-Thank you for contributing to Axiom Infrastructure! 🚀
+Thank you for contributing to Ryno-Tec Consulting! 🚀

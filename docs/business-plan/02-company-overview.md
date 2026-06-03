@@ -8,7 +8,7 @@
 
 | Detail | Value |
 |--------|-------|
-| **Legal Name** | Axiom Infrastructure (Pty) Ltd |
+| **Legal Name** | Ryno-Tec Consulting (Pty) Ltd |
 | **Status** | Company registration pending with CIPC |
 | **Establishment Date** | 2026 (Q2 target) |
 | **Jurisdiction** | South Africa (Johannesburg) |

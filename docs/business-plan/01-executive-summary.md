@@ -7,7 +7,7 @@ Enterprise Infrastructure & Platform Engineering Consulting
 
 ## 📋 Overview
 
-Axiom Infrastructure is a South African software infrastructure consulting firm founded by Kagiso Tshukudu, a Senior Infrastructure & Modern Workplace Engineer with 10+ years of professional experience. We specialise in platform engineering, Azure modern workplace management, and AI infrastructure solutions for enterprise clients across South Africa.
+Ryno-Tec Consulting is a South African software infrastructure consulting firm founded by Kagiso Tshukudu, a Senior Infrastructure & Modern Workplace Engineer with 10+ years of professional experience. We specialise in platform engineering, Azure modern workplace management, and AI infrastructure solutions for enterprise clients across South Africa.
 
 **Status:** Business planning phase (launch targeted Q2 2026)  
 **Founder:** Kagiso Tshukudu (KG)  
@@ -27,7 +27,7 @@ To become South Africa's preferred infrastructure and platform engineering partn
 
 ## 🏢 Business Concept
 
-Axiom Infrastructure bridges a critical gap in the South African market: the shortage of specialised expertise in advanced platform engineering, Azure modern workplace management, and AI infrastructure. Unlike traditional IT consulting that offers broad generalist services, Axiom focuses deeply on these three areas where enterprise demand significantly exceeds available supply.
+Ryno-Tec Consulting bridges a critical gap in the South African market: the shortage of specialised expertise in advanced platform engineering, Azure modern workplace management, and AI infrastructure. Unlike traditional IT consulting that offers broad generalist services, Ryno-Tec Consulting focuses deeply on these three areas where enterprise demand significantly exceeds available supply.
 
 ### The Market Opportunity
 
@@ -262,7 +262,7 @@ Axiom Infrastructure bridges a critical gap in the South African market: the sho
 There is significant unmet demand for specialised expertise in platform engineering, Azure modern workplace management, and AI infrastructure in South Africa. Enterprise clients struggle to find consultants who deeply understand these domains.
 
 ### Unique Positioning
-Axiom Infrastructure combines three rare attributes:
+Ryno-Tec Consulting combines three rare attributes:
 1. Deep technical expertise in cutting-edge infrastructure domains
 2. Current enterprise experience (not retired consultant knowledge)
 3. South African market understanding and local presence
@@ -280,7 +280,7 @@ Kagiso has the technical expertise, industry experience, and entrepreneurial mot
 
 ## 💡 Investment Thesis
 
-Axiom Infrastructure offers investors exposure to:
+Ryno-Tec Consulting offers investors exposure to:
 
 - **High-growth market segment** - Enterprise infrastructure/platform engineering
 - **Specialist consulting model** - Premium pricing, higher margins than generalist IT
@@ -306,16 +306,16 @@ Become recognised leader in infrastructure and platform engineering consulting i
 
 ## 📞 Contact & Next Steps
 
-**Axiom Infrastructure (Pty) Ltd**
+**Ryno-Tec Consulting (Pty) Ltd**
 - **Founder:** Kagiso Tshukudu
-- **Email:** kagiso@axiom-infrastructure.co.za
+- **Email:** kagiso@ryno-tec.co.za
 - **Phone:** +27 (XXX) XXX XXXX
 - **Current Status:** Business planning phase, launching Q2 2026
 
 **For potential clients or partners:**
 - Contact via email with brief description of needs
 - Schedule initial discovery call (free)
-- Discuss how Axiom can add value
+- Discuss how Ryno-Tec Consulting can add value
 
 **For potential investors:**
 - Review full business plan and financial models

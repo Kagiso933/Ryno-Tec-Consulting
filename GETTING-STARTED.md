@@ -6,7 +6,7 @@ Your personalised business plan and consulting firm strategy, managed through Gi
 
 ## 🎉 What You've Just Created
 
-A complete, professional **Git-based business repository** for Axiom Infrastructure - your personal infrastructure and platform engineering consulting firm.
+A complete, professional **Git-based business repository** for Ryno-Tec Consulting - your personal infrastructure and platform engineering consulting firm.
 
 ### Key Features
 
@@ -145,7 +145,7 @@ git merge feature/add-market-analysis
 
 ### Your Business Concept
 
-**Axiom Infrastructure** - A specialised IT consulting firm offering:
+**Ryno-Tec Consulting** - A specialised IT consulting firm offering:
 
 1. **Platform Engineering** (40% revenue)
    - Infrastructure as Code (Bicep, Terraform)
@@ -503,7 +503,7 @@ nano docs/business-plan/03-market-analysis.md
 **Target Launch:** Q2 2026  
 **Founder:** Kagiso Tshukudu
 
-Good luck with Axiom Infrastructure! 🚀
+Good luck with Ryno-Tec Consulting! 🚀
 
 ---
 
