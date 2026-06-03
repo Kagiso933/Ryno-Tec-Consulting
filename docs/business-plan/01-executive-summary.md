@@ -1,6 +1,6 @@
 # Executive Summary
 
-**AXIOM INFRASTRUCTURE (PTY) LTD**  
+**RYNO-TEC CONSULTING (PTY) LTD**  
 Enterprise Infrastructure & Platform Engineering Consulting
 
 ---

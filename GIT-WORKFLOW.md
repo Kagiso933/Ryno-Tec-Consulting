@@ -7,7 +7,7 @@ A practical guide to using Git for managing the Axiom Infrastructure business pl
 ## 📁 Repository Structure
 
 ```
-axiom-infrastructure/
+ryno-tec-consulting/
 ├── README.md                          # Repository overview
 ├── CONTRIBUTING.md                    # Contribution guidelines
 ├── VERSION                            # Current version (0.1.0)
@@ -67,12 +67,12 @@ a0620ea chore(init): Initialize repository with initial structure
 
 ```bash
 # If using GitHub/GitLab
-git clone https://github.com/axiom-infrastructure/business.git
-cd axiom-infrastructure
+git clone https://github.com/ryno-tec-consulting/business.git
+cd ryno-tec-consulting
 
 # If using local path
-git clone /path/to/axiom-infrastructure
-cd axiom-infrastructure
+git clone /path/to/ryno-tec-consulting
+cd ryno-tec-consulting
 ```
 
 ### Initial Setup
@@ -515,7 +515,7 @@ git rebase --continue
 - Review CONTRIBUTING.md for detailed guidelines
 - Check README.md for repository overview
 - Reference git documentation: `git help <command>`
-- Contact: kagiso@axiom-infrastructure.co.za
+- Contact: kagiso@ryno-tec-consulting.co.za
 
 ---
 

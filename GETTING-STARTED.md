@@ -1,4 +1,4 @@
-# AXIOM INFRASTRUCTURE - Getting Started Guide
+# RYNO-TEC CONSULTING - Getting Started Guide
 
 Your personalised business plan and consulting firm strategy, managed through Git version control.
 
@@ -46,7 +46,7 @@ A complete, professional **Git-based business repository** for Axiom Infrastruct
 ### Current Status: **0.1.0 - Business Planning Phase**
 
 ```
-axiom-infrastructure/
+ryno-tec-consulting/
 ├── ✅ README.md                    Repository overview
 ├── ✅ CONTRIBUTING.md              Git workflow guidelines  
 ├── ✅ GIT-WORKFLOW.md              Practical Git examples
@@ -89,13 +89,13 @@ axiom-infrastructure/
 
 **If stored on GitHub/GitLab:**
 ```bash
-git clone https://github.com/axiom-infrastructure/business.git
-cd axiom-infrastructure
+git clone https://github.com/ryno-tec-consulting/business.git
+cd ryno-tec-consulting
 ```
 
 **If local copy:**
 ```bash
-cd /path/to/axiom-infrastructure
+cd /path/to/ryno-tec-consulting
 git status
 ```
 
@@ -371,7 +371,7 @@ When adding documents, follow this structure:
 ```markdown
 # Document Title
 
-**AXIOM INFRASTRUCTURE**
+**RYNO-TEC CONSULTING**
 
 ---
 
@@ -457,8 +457,8 @@ Content here...
 - GitHub Guides: https://guides.github.com/
 
 ### Contact
-- **Email:** kagiso@axiom-infrastructure.co.za
-- **Repository:** axiom-infrastructure/business (GitHub/GitLab)
+- **Email:** kagiso@ryno-tec-consulting.co.za
+- **Repository:** ryno-tec-consulting/business (GitHub/GitLab)
 
 ---
 
@@ -489,7 +489,7 @@ You now have a professional, Git-controlled business plan repository ready for:
 ### Next Action
 
 ```bash
-cd axiom-infrastructure
+cd ryno-tec-consulting
 git checkout develop
 nano docs/business-plan/03-market-analysis.md
 # Start writing your market analysis!
@@ -497,7 +497,7 @@ nano docs/business-plan/03-market-analysis.md
 
 ---
 
-**Repository:** axiom-infrastructure  
+**Repository:** ryno-tec-consulting  
 **Current Version:** 0.1.0  
 **Status:** Business Planning Phase  
 **Target Launch:** Q2 2026  

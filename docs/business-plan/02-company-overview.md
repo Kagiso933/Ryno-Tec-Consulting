@@ -1,6 +1,6 @@
 # Company Overview
 
-**AXIOM INFRASTRUCTURE (PTY) LTD**
+**RYNO-TEC CONSULTING (PTY) LTD**
 
 ---
 

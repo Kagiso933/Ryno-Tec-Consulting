@@ -38,8 +38,8 @@ Thank you for contributing to the Axiom Infrastructure business development! Thi
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/axiom-infrastructure/business.git
-cd axiom-infrastructure
+git clone https://github.com/ryno-tec-consulting/business.git
+cd ryno-tec-consulting
 
 # 2. Configure Git (if first time)
 git config --global user.name "Your Name"
@@ -463,7 +463,7 @@ If sensitive data is accidentally committed:
 ## 📞 Questions or Issues?
 
 - Create an issue on GitHub/GitLab
-- Contact repository owner: `kagiso@axiom-infrastructure.co.za`
+- Contact repository owner: `kagiso@ryno-tec-consulting.co.za`
 - Reference relevant sections of this guide
 
 ---
