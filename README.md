@@ -1,4 +1,4 @@
-# AXIOM INFRASTRUCTURE
+# RYNO-TEC CONSULTING
 
 **Axiom Infrastructure (Pty) Ltd** - Enterprise Infrastructure & Platform Engineering Consulting
 
@@ -84,7 +84,7 @@ This repository contains the complete business plan, strategy, and operational d
 ## 🏗️ Repository Structure
 
 ```
-axiom-infrastructure/
+ryno-tec-consulting/
 ├── README.md                          # This file
 ├── .gitignore                         # Git ignore patterns
 ├── CONTRIBUTING.md                    # Contribution guidelines
@@ -157,8 +157,8 @@ axiom-infrastructure/
 
 ```bash
 # Clone the repository
-git clone https://github.com/axiom-infrastructure/business.git
-cd axiom-infrastructure
+git clone https://github.com/ryno-tec-consulting/business.git
+cd ryno-tec-consulting
 
 # Create your working branch
 git checkout -b feature/your-update
@@ -293,9 +293,9 @@ git push origin main --tags
 ## 📞 Contact & Support
 
 **Founder:** Kagiso Tshukudu  
-**Email:** kagiso@axiom-infrastructure.co.za  
+**Email:** kagiso@ryno-tec-consulting.co.za  
 **Phone:** +27 (XXX) XXX XXXX  
-**Website:** www.axiom-infrastructure.co.za (launching soon)
+**Website:** www.ryno-tec-consulting.co.za (launching soon)
 
 ---
 
