@@ -293,9 +293,9 @@ git push origin main --tags
 ## 📞 Contact & Support
 
 **Founder:** Kagiso Tshukudu  
-**Email:** kagiso@ryno-tec-consulting.co.za  
+**Email:** kagiso@ryno-tec.co.za  
 **Phone:** +27 (XXX) XXX XXXX  
-**Website:** www.ryno-tec-consulting.co.za (launching soon)
+**Website:** www.ryno-tec.co.za (launching soon)
 
 ---
 
