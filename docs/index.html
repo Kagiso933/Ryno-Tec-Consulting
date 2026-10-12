@@ -23,13 +23,13 @@
         }
 
         :root {
-            --primary: #0f172a;
-            --secondary: #1e40af;
-            --accent: #1d4ed8;
-            --light: #f8fafc;
-            --border: #e2e8f0;
-            --text: #1f2937;
-            --text-muted: #6b7280;
+            --primary: #1a1a1a;
+            --secondary: #2d2d2d;
+            --accent: #ff6b35;
+            --light: #f5f5f5;
+            --border: #e0e0e0;
+            --text: #333333;
+            --text-muted: #666666;
         }
 
         /* Header */
@@ -72,7 +72,7 @@
         }
 
         nav a:hover {
-            color: #60a5fa;
+            color: #ff6b35;
             transition: color 0.3s ease;
         }
 
@@ -121,10 +121,10 @@
 
         @keyframes glow {
             0%, 100% {
-                box-shadow: 0 0 20px rgba(29, 78, 216, 0.3);
+                box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
             }
             50% {
-                box-shadow: 0 0 30px rgba(29, 78, 216, 0.6);
+                box-shadow: 0 0 30px rgba(255, 107, 53, 0.6);
             }
         }
 
@@ -137,12 +137,12 @@
         }
 
         .nav-cta:hover {
-            background: #1d4ed8;
+            background: #e55a1f;
         }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
             color: white;
             padding: 8rem 2rem;
             max-width: 100%;
@@ -335,7 +335,7 @@
         }
 
         .solution-header {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
             color: white;
             padding: 1.5rem;
         }
@@ -396,7 +396,7 @@
 
         /* Competitive Advantages */
         .advantages {
-            background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
             color: white;
         }
 
@@ -484,145 +484,9 @@
             transform: translateY(-6px);
         }
 
-        /* Investment Section */
-        .investment {
-            background: linear-gradient(135deg, #0f172a 0%, #1e40af 50%, #1d4ed8 100%);
-            color: white;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .investment::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            border-radius: 50%;
-            animation: pulse 4s ease-in-out infinite;
-        }
-
-        .investment h2 {
-            color: white;
-            position: relative;
-            z-index: 1;
-        }
-
-        .investment .section-subtitle {
-            color: rgba(255,255,255,0.9);
-            position: relative;
-            z-index: 1;
-        }
-
-        .investment-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            max-width: 1400px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-
-        .investment-highlights {
-            animation: slideInLeft 0.8s ease-out;
-        }
-
-        .investment-highlights ul {
-            list-style: none;
-            margin-bottom: 2rem;
-        }
-
-        .investment-highlights li {
-            padding: 1rem 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .investment-highlights li:before {
-            content: '✓';
-            display: inline-block;
-            width: 32px;
-            height: 32px;
-            background: rgba(255,255,255,0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            flex-shrink: 0;
-        }
-
-        .investment-cta {
-            animation: slideInRight 0.8s ease-out;
-        }
-
-        .investment-card {
-            background: rgba(255,255,255,0.08);
-            border: 2px solid rgba(255,255,255,0.2);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            transition: all 0.3s;
-        }
-
-        .investment-card:hover {
-            background: rgba(255,255,255,0.12);
-            border-color: rgba(255,255,255,0.4);
-            transform: translateY(-4px);
-        }
-
-        .investment-card h4 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .investment-card p {
-            font-size: 0.95rem;
-            opacity: 0.95;
-        }
-
-        .metrics-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .metric {
-            text-align: center;
-        }
-
-        .metric-value {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .metric-label {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        @media (max-width: 768px) {
-            .investment-content {
-                grid-template-columns: 1fr;
-            }
-
-            .investment::before {
-                width: 300px;
-                height: 300px;
-            }
-        }
 
         .team-member-header {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
             height: 200px;
             display: flex;
             align-items: flex-end;
@@ -873,52 +737,52 @@
             <p class="section-subtitle">Real infrastructure solutions built and deployed at enterprise scale, demonstrating our technical depth and proven delivery capability.</p>
 
             <div class="solutions-grid">
-                <!-- AVD Operations Dashboard -->
+                <!-- Enterprise Platform Migration -->
                 <div class="solution-item">
                     <div class="solution-header">
-                        <h3>AVD Operations Dashboard</h3>
-                        <p>Multi-subscription Azure Virtual Desktop monitoring and management</p>
+                        <h3>Enterprise Platform Migration</h3>
+                        <p>Multi-cloud infrastructure consolidation and modernization</p>
                     </div>
                     <div class="solution-body">
                         <h4>What We Built</h4>
                         <ul>
-                            <li>Real-time AVD infrastructure visibility across subscriptions</li>
+                            <li>Real-time infrastructure visibility across cloud platforms</li>
                             <li>Cost analysis and resource optimization tracking</li>
-                            <li>Performance monitoring and alerting</li>
-                            <li>Session management and user analytics</li>
+                            <li>Performance monitoring and alerting systems</li>
+                            <li>Usage analytics and capacity planning</li>
                         </ul>
                         <h4>Technology Stack</h4>
                         <ul>
-                            <li>Azure REST APIs and Microsoft Graph</li>
-                            <li>MSAL authentication integration</li>
-                            <li>Advanced charting and analytics</li>
+                            <li>Cloud APIs and identity management integration</li>
+                            <li>Secure authentication and authorization</li>
+                            <li>Advanced analytics and reporting</li>
                         </ul>
                         <div class="solution-impact">
-                            Impact: Reduced infrastructure management overhead by 40%, improved visibility into costs and performance metrics for enterprise deployments.
+                            Impact: Reduced infrastructure management overhead by 40%, improved visibility into costs and performance metrics across enterprise deployments.
                         </div>
                     </div>
                 </div>
 
-                <!-- Compliance Enforcement System -->
+                <!-- Identity Governance Automation -->
                 <div class="solution-item">
                     <div class="solution-header">
-                        <h3>Compliance Enforcement System</h3>
-                        <p>Automated enforcement of training and access review compliance</p>
+                        <h3>Identity Governance Automation</h3>
+                        <p>Automated enforcement of access control and compliance policies</p>
                     </div>
                     <div class="solution-body">
                         <h4>What We Built</h4>
                         <ul>
-                            <li>Automated detection of non-compliance across workforce</li>
-                            <li>Real-time enforcement through Conditional Access policies</li>
+                            <li>Automated detection of non-compliance across organization</li>
+                            <li>Real-time enforcement through identity policies</li>
                             <li>User-facing notification and remediation workflows</li>
-                            <li>Admin portal for monitoring and override management</li>
+                            <li>Admin dashboard for monitoring and policy management</li>
                         </ul>
                         <h4>Technology Stack</h4>
                         <ul>
-                            <li>Power Automate workflow orchestration</li>
-                            <li>Entra ID security groups and policies</li>
-                            <li>Intune Win32 app deployment</li>
-                            <li>WPF/PowerShell dialog interfaces</li>
+                            <li>Workflow orchestration and automation</li>
+                            <li>Identity management and security groups</li>
+                            <li>Device management and deployment automation</li>
+                            <li>Custom automation interfaces</li>
                         </ul>
                         <div class="solution-impact">
                             Impact: 100% compliance enforcement across 5000+ users, reduced compliance violations by 95%, automated previously manual processes.
@@ -926,26 +790,26 @@
                     </div>
                 </div>
 
-                <!-- Dr Gates Tool -->
+                <!-- IT Operations Automation -->
                 <div class="solution-item">
                     <div class="solution-header">
-                        <h3>Dr Gates Enterprise Utility</h3>
-                        <p>Comprehensive internal IT self-service and diagnostic tool</p>
+                        <h3>IT Operations Automation</h3>
+                        <p>Enterprise self-service platform with diagnostics and automation</p>
                     </div>
                     <div class="solution-body">
                         <h4>What We Built</h4>
                         <ul>
-                            <li>25+ self-service IT operations commands</li>
+                            <li>25+ self-service IT operations capabilities</li>
                             <li>Real-time system diagnostics and health checks</li>
-                            <li>Integrated update management (Windows, firmware, applications)</li>
-                            <li>Telemetry collection and reporting integration</li>
+                            <li>Integrated lifecycle management automation</li>
+                            <li>Telemetry collection and analytics integration</li>
                         </ul>
                         <h4>Technology Stack</h4>
                         <ul>
-                            <li>WPF desktop application framework</li>
-                            <li>WebView2 for web integration</li>
-                            <li>PowerShell automation scripts (33+ commands)</li>
-                            <li>SharePoint/Grafana telemetry backend</li>
+                            <li>Cross-platform desktop application framework</li>
+                            <li>Web integration and embedded browser</li>
+                            <li>Enterprise automation scripting</li>
+                            <li>Analytics and telemetry backend</li>
                         </ul>
                         <div class="solution-impact">
                             Impact: Deployed to 5000+ users, reduced IT support tickets by 35%, enabled users to self-remediate common issues.
@@ -953,25 +817,25 @@
                     </div>
                 </div>
 
-                <!-- Prometheus/OTEL Analyzer -->
+                <!-- Observability Infrastructure -->
                 <div class="solution-item">
                     <div class="solution-header">
-                        <h3>Prometheus & OTEL Analyzer</h3>
-                        <p>Observability metrics audit and optimization tool</p>
+                        <h3>Observability Infrastructure</h3>
+                        <p>Metrics pipeline optimization and monitoring platform</p>
                     </div>
                     <div class="solution-body">
                         <h4>What We Built</h4>
                         <ul>
                             <li>High-cardinality metric detection and reporting</li>
-                            <li>Unused metrics identification</li>
-                            <li>Automatic metric relabeling configuration generation</li>
-                            <li>Dual-exporter architecture support (Prometheus + OTLP)</li>
+                            <li>Unused metrics identification and cleanup</li>
+                            <li>Automatic metric pipeline optimization</li>
+                            <li>Multi-backend observability support</li>
                         </ul>
                         <h4>Technology Stack</h4>
                         <ul>
-                            <li>Python CLI and Flask backend</li>
-                            <li>React frontend dashboard</li>
-                            <li>Prometheus and OpenTelemetry integration</li>
+                            <li>Backend CLI and API services</li>
+                            <li>Analytics and visualization dashboard</li>
+                            <li>Multi-protocol observability integration</li>
                         </ul>
                         <div class="solution-impact">
                             Impact: Identified 70% cardinality bloat in metrics pipeline, optimized observability infrastructure costs, improved metrics quality.
@@ -982,22 +846,22 @@
                 <!-- Access Review Automation -->
                 <div class="solution-item">
                     <div class="solution-header">
-                        <h3>Access Review Automation Platform</h3>
-                        <p>Streamlined identity access review and provisioning</p>
+                        <h3>Access Review Automation</h3>
+                        <p>Streamlined identity access governance and provisioning</p>
                     </div>
                     <div class="solution-body">
                         <h4>What We Built</h4>
                         <ul>
                             <li>Automated access review collection and orchestration</li>
-                            <li>Restriction and restoration workflow automation</li>
-                            <li>Integration with Power BI and Power Automate</li>
-                            <li>MSAL-secured dashboard for reviewers</li>
+                            <li>Enforcement and remediation workflow automation</li>
+                            <li>Analytics and reporting integration</li>
+                            <li>Secure dashboard for access reviewers</li>
                         </ul>
                         <h4>Technology Stack</h4>
                         <ul>
-                            <li>MSAL.js authentication framework</li>
-                            <li>Microsoft Graph API integration</li>
-                            <li>Power Automate workflow orchestration</li>
+                            <li>Secure authentication framework</li>
+                            <li>Identity management API integration</li>
+                            <li>Workflow orchestration and automation</li>
                         </ul>
                         <div class="solution-impact">
                             Impact: Automated 100% of access review workflows, reduced review cycles from weeks to days, improved compliance audit trails.
@@ -1005,28 +869,28 @@
                     </div>
                 </div>
 
-                <!-- FSLogix Profile Manager -->
+                <!-- User Profile Optimization -->
                 <div class="solution-item">
                     <div class="solution-header">
-                        <h3>FSLogix Profile Management Suite</h3>
-                        <p>Enterprise user profile optimization and management</p>
+                        <h3>User Profile Optimization</h3>
+                        <p>Enterprise user environment optimization and management</p>
                     </div>
                     <div class="solution-body">
                         <h4>What We Built</h4>
                         <ul>
-                            <li>Profile size assessment and reporting</li>
-                            <li>Automated profile cleanup and optimization</li>
-                            <li>Resize validation and safety checks</li>
-                            <li>Enterprise-scale profile analytics</li>
+                            <li>User environment assessment and reporting</li>
+                            <li>Automated cleanup and performance optimization</li>
+                            <li>Validation and integrity checking</li>
+                            <li>Enterprise-scale user analytics</li>
                         </ul>
                         <h4>Technology Stack</h4>
                         <ul>
-                            <li>PowerShell profile management scripts</li>
-                            <li>Azure Files integration</li>
-                            <li>Automated assessment reporting</li>
+                            <li>Enterprise automation scripting</li>
+                            <li>Cloud storage integration</li>
+                            <li>Automated assessment and reporting</li>
                         </ul>
                         <div class="solution-impact">
-                            Impact: Reduced profile management overhead, improved login performance, prevented profile bloat issues across 5000+ users.
+                            Impact: Reduced profile management overhead, improved login performance, prevented user environment issues across 5000+ users.
                         </div>
                     </div>
                 </div>
@@ -1113,63 +977,6 @@
         </div>
     </section>
 
-    <!-- Investment Opportunity Section -->
-    <section class="investment">
-        <div class="container">
-            <h2>Investment Opportunity</h2>
-            <p class="section-subtitle">Join the infrastructure transformation journey. Ryno-Tec Consulting is scaling to capture South Africa's enterprise platform engineering market.</p>
-
-            <div class="investment-content">
-                <div class="investment-highlights">
-                    <h3>Compelling Investment Case</h3>
-                    <ul>
-                        <li>R12B+ addressable market in enterprise infrastructure</li>
-                        <li>Proven founder with 10+ years enterprise delivery</li>
-                        <li>Rare hybrid skill set: Platform Engineering + Azure + AI/ML</li>
-                        <li>Break-even projected Q3 2027</li>
-                        <li>Gross margins 65-75% with scalable model</li>
-                        <li>Multiple exit paths: acquisition, sustainable growth, regional expansion</li>
-                    </ul>
-
-                    <div class="metrics-grid">
-                        <div class="metric">
-                            <div class="metric-value">R12.5M</div>
-                            <div class="metric-label">Year 1 Revenue Target</div>
-                        </div>
-                        <div class="metric">
-                            <div class="metric-value">8-12</div>
-                            <div class="metric-label">Target Clients</div>
-                        </div>
-                        <div class="metric">
-                            <div class="metric-value">Q3'27</div>
-                            <div class="metric-label">Break-Even</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="investment-cta">
-                    <div class="investment-card">
-                        <h4>Angel Investment Opportunity</h4>
-                        <p>R1M angel investment (40% of total R2.5M raise)</p>
-                    </div>
-
-                    <div class="investment-card">
-                        <h4>Business Model</h4>
-                        <p>60% project work, 40% retainer services. LTV/CAC ratio of 15-40x with proven unit economics.</p>
-                    </div>
-
-                    <div class="investment-card">
-                        <h4>Full Materials Available</h4>
-                        <p>Investment summary, pitch deck, financial projections, and case studies ready for review.</p>
-                    </div>
-
-                    <div style="margin-top: 2rem;">
-                        <a href="https://github.com/Kagiso933/Ryno-Tec-Consulting/tree/main/docs/investor-materials" class="btn btn-primary" target="_blank">Review Investment Materials</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- CTA Section -->
     <section id="contact" class="cta">
@@ -1204,8 +1011,7 @@
             <div class="footer-section">
                 <h4>Resources</h4>
                 <a href="https://github.com/Kagiso933/Ryno-Tec-Consulting/blob/main/docs/INDEX.md" target="_blank">Documentation</a><br>
-                <a href="https://github.com/Kagiso933/Ryno-Tec-Consulting/tree/main/modules/invoice-quote-generator" target="_blank">Invoice/Quote Generator</a><br>
-                <a href="https://github.com/Kagiso933/Ryno-Tec-Consulting/tree/main/docs/investor-materials" target="_blank">Investor Materials</a>
+                <a href="https://github.com/Kagiso933/Ryno-Tec-Consulting" target="_blank">GitHub Repository</a>
             </div>
             <div class="footer-section">
                 <h4>Connect</h4>
