@@ -73,6 +73,59 @@
 
         nav a:hover {
             color: #60a5fa;
+            transition: color 0.3s ease;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(29, 78, 216, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 30px rgba(29, 78, 216, 0.6);
+            }
         }
 
         .nav-cta {
@@ -106,6 +159,7 @@
             margin-bottom: 1.5rem;
             font-weight: 700;
             letter-spacing: -0.5px;
+            animation: slideInLeft 0.8s ease-out;
         }
 
         .hero-subtitle {
@@ -114,12 +168,14 @@
             margin-bottom: 2.5rem;
             opacity: 0.95;
             max-width: 700px;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
         }
 
         .hero-cta {
             display: flex;
             gap: 1rem;
             margin-bottom: 3rem;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
         }
 
         .btn {
@@ -202,11 +258,17 @@
             border-left: 4px solid var(--accent);
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
             transition: all 0.3s;
+            animation: fadeInUp 0.6s ease-out backwards;
         }
+
+        .expertise-card:nth-child(1) { animation-delay: 0.1s; }
+        .expertise-card:nth-child(2) { animation-delay: 0.2s; }
+        .expertise-card:nth-child(3) { animation-delay: 0.3s; }
+        .expertise-card:nth-child(4) { animation-delay: 0.4s; }
 
         .expertise-card:hover {
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
+            transform: translateY(-4px);
         }
 
         .expertise-card h3 {
@@ -256,11 +318,20 @@
             border-radius: 6px;
             overflow: hidden;
             transition: all 0.3s;
+            animation: fadeInUp 0.6s ease-out backwards;
         }
+
+        .solution-item:nth-child(1) { animation-delay: 0.1s; }
+        .solution-item:nth-child(2) { animation-delay: 0.2s; }
+        .solution-item:nth-child(3) { animation-delay: 0.3s; }
+        .solution-item:nth-child(4) { animation-delay: 0.4s; }
+        .solution-item:nth-child(5) { animation-delay: 0.5s; }
+        .solution-item:nth-child(6) { animation-delay: 0.6s; }
 
         .solution-item:hover {
             border-color: var(--accent);
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transform: translateY(-4px);
         }
 
         .solution-header {
@@ -351,6 +422,20 @@
             padding: 2rem;
             border-radius: 6px;
             backdrop-filter: blur(10px);
+            animation: fadeInUp 0.6s ease-out backwards;
+            transition: all 0.3s;
+        }
+
+        .advantage-card:nth-child(1) { animation-delay: 0.1s; }
+        .advantage-card:nth-child(2) { animation-delay: 0.2s; }
+        .advantage-card:nth-child(3) { animation-delay: 0.3s; }
+        .advantage-card:nth-child(4) { animation-delay: 0.4s; }
+        .advantage-card:nth-child(5) { animation-delay: 0.5s; }
+        .advantage-card:nth-child(6) { animation-delay: 0.6s; }
+
+        .advantage-card:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-4px);
         }
 
         .advantage-number {
@@ -391,11 +476,149 @@
             overflow: hidden;
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
             transition: all 0.3s;
+            animation: fadeInUp 0.6s ease-out;
         }
 
         .team-member:hover {
             box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+            transform: translateY(-6px);
+        }
+
+        /* Investment Section */
+        .investment {
+            background: linear-gradient(135deg, #0f172a 0%, #1e40af 50%, #1d4ed8 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .investment::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        .investment h2 {
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        .investment .section-subtitle {
+            color: rgba(255,255,255,0.9);
+            position: relative;
+            z-index: 1;
+        }
+
+        .investment-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .investment-highlights {
+            animation: slideInLeft 0.8s ease-out;
+        }
+
+        .investment-highlights ul {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .investment-highlights li {
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .investment-highlights li:before {
+            content: '✓';
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .investment-cta {
+            animation: slideInRight 0.8s ease-out;
+        }
+
+        .investment-card {
+            background: rgba(255,255,255,0.08);
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .investment-card:hover {
+            background: rgba(255,255,255,0.12);
+            border-color: rgba(255,255,255,0.4);
             transform: translateY(-4px);
+        }
+
+        .investment-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .investment-card p {
+            font-size: 0.95rem;
+            opacity: 0.95;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .metric {
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .investment-content {
+                grid-template-columns: 1fr;
+            }
+
+            .investment::before {
+                width: 300px;
+                height: 300px;
+            }
         }
 
         .team-member-header {
@@ -890,6 +1113,64 @@
         </div>
     </section>
 
+    <!-- Investment Opportunity Section -->
+    <section class="investment">
+        <div class="container">
+            <h2>Investment Opportunity</h2>
+            <p class="section-subtitle">Join the infrastructure transformation journey. Ryno-Tec Consulting is scaling to capture South Africa's enterprise platform engineering market.</p>
+
+            <div class="investment-content">
+                <div class="investment-highlights">
+                    <h3>Compelling Investment Case</h3>
+                    <ul>
+                        <li>R12B+ addressable market in enterprise infrastructure</li>
+                        <li>Proven founder with 10+ years enterprise delivery</li>
+                        <li>Rare hybrid skill set: Platform Engineering + Azure + AI/ML</li>
+                        <li>Break-even projected Q3 2027</li>
+                        <li>Gross margins 65-75% with scalable model</li>
+                        <li>Multiple exit paths: acquisition, sustainable growth, regional expansion</li>
+                    </ul>
+
+                    <div class="metrics-grid">
+                        <div class="metric">
+                            <div class="metric-value">R12.5M</div>
+                            <div class="metric-label">Year 1 Revenue Target</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">8-12</div>
+                            <div class="metric-label">Target Clients</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">Q3'27</div>
+                            <div class="metric-label">Break-Even</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="investment-cta">
+                    <div class="investment-card">
+                        <h4>Angel Investment Opportunity</h4>
+                        <p>R1M angel investment (40% of total R2.5M raise)</p>
+                    </div>
+
+                    <div class="investment-card">
+                        <h4>Business Model</h4>
+                        <p>60% project work, 40% retainer services. LTV/CAC ratio of 15-40x with proven unit economics.</p>
+                    </div>
+
+                    <div class="investment-card">
+                        <h4>Full Materials Available</h4>
+                        <p>Investment summary, pitch deck, financial projections, and case studies ready for review.</p>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <a href="https://github.com/Kagiso933/Ryno-Tec-Consulting/tree/main/docs/investor-materials" class="btn btn-primary" target="_blank">Review Investment Materials</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section id="contact" class="cta">
         <div class="container">
@@ -921,9 +1202,15 @@
                 <p>Direct inquiries welcomed</p>
             </div>
             <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="https://github.com/Kagiso933/Ryno-Tec-Consulting/blob/main/docs/INDEX.md" target="_blank">Documentation</a><br>
+                <a href="https://github.com/Kagiso933/Ryno-Tec-Consulting/tree/main/modules/invoice-quote-generator" target="_blank">Invoice/Quote Generator</a><br>
+                <a href="https://github.com/Kagiso933/Ryno-Tec-Consulting/tree/main/docs/investor-materials" target="_blank">Investor Materials</a>
+            </div>
+            <div class="footer-section">
                 <h4>Connect</h4>
-                <a href="#">LinkedIn</a><br>
-                <a href="#">GitHub</a>
+                <a href="https://linkedin.com/in/kagiso-tshukudu-41542977" target="_blank">LinkedIn</a><br>
+                <a href="https://github.com/Kagiso933" target="_blank">GitHub</a>
             </div>
         </div>
         <div class="footer-bottom">
