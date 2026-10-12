@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryno-Tec Consulting | Enterprise Infrastructure & Platform Engineering</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background-color: #ffffff;
+        }
+
+        :root {
+            --primary: #0f172a;
+            --secondary: #1e40af;
+            --accent: #1d4ed8;
+            --light: #f8fafc;
+            --border: #e2e8f0;
+            --text: #1f2937;
+            --text-muted: #6b7280;
+        }
+
+        /* Header */
+        header {
+            background: var(--primary);
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        .nav-cta {
+            background: var(--accent);
+            color: white !important;
+            padding: 0.6rem 1.5rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .nav-cta:hover {
+            background: #1d4ed8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 8rem 2rem;
+            max-width: 100%;
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            line-height: 1.5;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            max-width: 700px;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.85rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            background: #f1f5f9;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            border: 2px solid white;
+            color: white;
+            background: transparent;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        section h2 {
+            font-size: 2.75rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        /* Expertise Section */
+        .expertise {
+            background: var(--light);
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .expertise-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+
+        .expertise-card:hover {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .expertise-card h3 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .expertise-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tech-tag {
+            background: var(--light);
+            color: var(--secondary);
+            padding: 0.4rem 0.8rem;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Solutions Section */
+        .solutions {
+            background: white;
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .solution-item {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .solution-item:hover {
+            border-color: var(--accent);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .solution-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 1.5rem;
+        }
+
+        .solution-header h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .solution-header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .solution-body {
+            padding: 2rem;
+        }
+
+        .solution-body h4 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+
+        .solution-body ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .solution-body li {
+            padding: 0.4rem 0 0.4rem 1.5rem;
+            position: relative;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .solution-body li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .solution-impact {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        /* Competitive Advantages */
+        .advantages {
+            background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
+            color: white;
+        }
+
+        .advantages h2 {
+            color: white;
+        }
+
+        .advantages .section-subtitle {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .advantage-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 6px;
+            backdrop-filter: blur(10px);
+        }
+
+        .advantage-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            opacity: 0.3;
+            margin-bottom: 0.5rem;
+        }
+
+        .advantage-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        .advantage-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        /* Team Section */
+        .team {
+            background: var(--light);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+
+        .team-member:hover {
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+            transform: translateY(-4px);
+        }
+
+        .team-member-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            height: 200px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 2rem;
+        }
+
+        .team-member-name {
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .team-member-body {
+            padding: 2rem;
+        }
+
+        .team-member-title {
+            color: var(--accent);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .team-member-experience {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .expertise-list {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+
+        .expertise-list p {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.8rem;
+        }
+
+        .expertise-items {
+            list-style: none;
+        }
+
+        .expertise-items li {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            padding: 0.4rem 0;
+        }
+
+        /* CTA Section */
+        .cta {
+            background: white;
+            text-align: center;
+            padding: 6rem 2rem;
+            border-top: 2px solid var(--border);
+        }
+
+        .cta h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .cta p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 3rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-section p, .footer-section a {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+            line-height: 1.8;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                gap: 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Ryno-Tec Consulting</div>
+            <ul>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Enterprise Infrastructure Transformation</h1>
+            <p class="hero-subtitle">Specialized consulting in platform engineering, modern workplace infrastructure, and AI/ML operations. Built on 10+ years of enterprise delivery at leading financial institutions.</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+                <a href="#solutions" class="btn btn-secondary">View Our Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <h2>Deep Technical Expertise</h2>
+            <p class="section-subtitle">10+ years delivering enterprise-scale infrastructure solutions with proven expertise across cloud platforms, modern workplace management, and platform engineering.</p>
+            
+            <div class="expertise-grid">
+                <!-- Platform Engineering -->
+                <div class="expertise-card">
+                    <h3>Platform Engineering & DevOps</h3>
+                    <p>Transform infrastructure through code-first practices, automated deployments, and cloud-native architecture design. Proven expertise with enterprise-scale implementations.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Bicep</span>
+                        <span class="tech-tag">ARM Templates</span>
+                        <span class="tech-tag">Terraform</span>
+                        <span class="tech-tag">PowerShell</span>
+                        <span class="tech-tag">CI/CD</span>
+                        <span class="tech-tag">DevOps</span>
+                    </div>
+                </div>
+
+                <!-- Azure Modern Workplace -->
+                <div class="expertise-card">
+                    <h3>Azure Modern Workplace Management</h3>
+                    <p>End-to-end design and implementation of Azure Virtual Desktop, Entra ID identity governance, and Intune device management at enterprise scale with high availability requirements.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Azure Virtual Desktop</span>
+                        <span class="tech-tag">Entra ID</span>
+                        <span class="tech-tag">Intune</span>
+                        <span class="tech-tag">FSLogix</span>
+                        <span class="tech-tag">Microsoft 365</span>
+                    </div>
+                </div>
+
+                <!-- AI Infrastructure -->
+                <div class="expertise-card">
+                    <h3>AI Infrastructure & MLOps</h3>
+                    <p>Design and deployment of production-grade machine learning platforms, model monitoring, and enterprise AI governance. Integration with cloud ML services and custom model infrastructure.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">MLOps</span>
+                        <span class="tech-tag">Model Deployment</span>
+                        <span class="tech-tag">Azure ML</span>
+                        <span class="tech-tag">OTEL</span>
+                        <span class="tech-tag">Observability</span>
+                    </div>
+                </div>
+
+                <!-- Compliance & Security -->
+                <div class="expertise-card">
+                    <h3>Compliance & Enterprise Security</h3>
+                    <p>Deep expertise in South African compliance frameworks including POPIA data protection and financial services regulations. Secure infrastructure design and governance implementation.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">POPIA</span>
+                        <span class="tech-tag">Compliance</span>
+                        <span class="tech-tag">B-BBEE</span>
+                        <span class="tech-tag">Security Hardening</span>
+                        <span class="tech-tag">Governance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <h2>Solutions We've Delivered</h2>
+            <p class="section-subtitle">Real infrastructure solutions built and deployed at enterprise scale, demonstrating our technical depth and proven delivery capability.</p>
+
+            <div class="solutions-grid">
+                <!-- AVD Operations Dashboard -->
+                <div class="solution-item">
+                    <div class="solution-header">
+                        <h3>AVD Operations Dashboard</h3>
+                        <p>Multi-subscription Azure Virtual Desktop monitoring and management</p>
+                    </div>
+                    <div class="solution-body">
+                        <h4>What We Built</h4>
+                        <ul>
+                            <li>Real-time AVD infrastructure visibility across subscriptions</li>
+                            <li>Cost analysis and resource optimization tracking</li>
+                            <li>Performance monitoring and alerting</li>
+                            <li>Session management and user analytics</li>
+                        </ul>
+                        <h4>Technology Stack</h4>
+                        <ul>
+                            <li>Azure REST APIs and Microsoft Graph</li>
+                            <li>MSAL authentication integration</li>
+                            <li>Advanced charting and analytics</li>
+                        </ul>
+                        <div class="solution-impact">
+                            Impact: Reduced infrastructure management overhead by 40%, improved visibility into costs and performance metrics for enterprise deployments.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compliance Enforcement System -->
+                <div class="solution-item">
+                    <div class="solution-header">
+                        <h3>Compliance Enforcement System</h3>
+                        <p>Automated enforcement of training and access review compliance</p>
+                    </div>
+                    <div class="solution-body">
+                        <h4>What We Built</h4>
+                        <ul>
+                            <li>Automated detection of non-compliance across workforce</li>
+                            <li>Real-time enforcement through Conditional Access policies</li>
+                            <li>User-facing notification and remediation workflows</li>
+                            <li>Admin portal for monitoring and override management</li>
+                        </ul>
+                        <h4>Technology Stack</h4>
+                        <ul>
+                            <li>Power Automate workflow orchestration</li>
+                            <li>Entra ID security groups and policies</li>
+                            <li>Intune Win32 app deployment</li>
+                            <li>WPF/PowerShell dialog interfaces</li>
+                        </ul>
+                        <div class="solution-impact">
+                            Impact: 100% compliance enforcement across 5000+ users, reduced compliance violations by 95%, automated previously manual processes.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dr Gates Tool -->
+                <div class="solution-item">
+                    <div class="solution-header">
+                        <h3>Dr Gates Enterprise Utility</h3>
+                        <p>Comprehensive internal IT self-service and diagnostic tool</p>
+                    </div>
+                    <div class="solution-body">
+                        <h4>What We Built</h4>
+                        <ul>
+                            <li>25+ self-service IT operations commands</li>
+                            <li>Real-time system diagnostics and health checks</li>
+                            <li>Integrated update management (Windows, firmware, applications)</li>
+                            <li>Telemetry collection and reporting integration</li>
+                        </ul>
+                        <h4>Technology Stack</h4>
+                        <ul>
+                            <li>WPF desktop application framework</li>
+                            <li>WebView2 for web integration</li>
+                            <li>PowerShell automation scripts (33+ commands)</li>
+                            <li>SharePoint/Grafana telemetry backend</li>
+                        </ul>
+                        <div class="solution-impact">
+                            Impact: Deployed to 5000+ users, reduced IT support tickets by 35%, enabled users to self-remediate common issues.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prometheus/OTEL Analyzer -->
+                <div class="solution-item">
+                    <div class="solution-header">
+                        <h3>Prometheus & OTEL Analyzer</h3>
+                        <p>Observability metrics audit and optimization tool</p>
+                    </div>
+                    <div class="solution-body">
+                        <h4>What We Built</h4>
+                        <ul>
+                            <li>High-cardinality metric detection and reporting</li>
+                            <li>Unused metrics identification</li>
+                            <li>Automatic metric relabeling configuration generation</li>
+                            <li>Dual-exporter architecture support (Prometheus + OTLP)</li>
+                        </ul>
+                        <h4>Technology Stack</h4>
+                        <ul>
+                            <li>Python CLI and Flask backend</li>
+                            <li>React frontend dashboard</li>
+                            <li>Prometheus and OpenTelemetry integration</li>
+                        </ul>
+                        <div class="solution-impact">
+                            Impact: Identified 70% cardinality bloat in metrics pipeline, optimized observability infrastructure costs, improved metrics quality.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Access Review Automation -->
+                <div class="solution-item">
+                    <div class="solution-header">
+                        <h3>Access Review Automation Platform</h3>
+                        <p>Streamlined identity access review and provisioning</p>
+                    </div>
+                    <div class="solution-body">
+                        <h4>What We Built</h4>
+                        <ul>
+                            <li>Automated access review collection and orchestration</li>
+                            <li>Restriction and restoration workflow automation</li>
+                            <li>Integration with Power BI and Power Automate</li>
+                            <li>MSAL-secured dashboard for reviewers</li>
+                        </ul>
+                        <h4>Technology Stack</h4>
+                        <ul>
+                            <li>MSAL.js authentication framework</li>
+                            <li>Microsoft Graph API integration</li>
+                            <li>Power Automate workflow orchestration</li>
+                        </ul>
+                        <div class="solution-impact">
+                            Impact: Automated 100% of access review workflows, reduced review cycles from weeks to days, improved compliance audit trails.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FSLogix Profile Manager -->
+                <div class="solution-item">
+                    <div class="solution-header">
+                        <h3>FSLogix Profile Management Suite</h3>
+                        <p>Enterprise user profile optimization and management</p>
+                    </div>
+                    <div class="solution-body">
+                        <h4>What We Built</h4>
+                        <ul>
+                            <li>Profile size assessment and reporting</li>
+                            <li>Automated profile cleanup and optimization</li>
+                            <li>Resize validation and safety checks</li>
+                            <li>Enterprise-scale profile analytics</li>
+                        </ul>
+                        <h4>Technology Stack</h4>
+                        <ul>
+                            <li>PowerShell profile management scripts</li>
+                            <li>Azure Files integration</li>
+                            <li>Automated assessment reporting</li>
+                        </ul>
+                        <div class="solution-impact">
+                            Impact: Reduced profile management overhead, improved login performance, prevented profile bloat issues across 5000+ users.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Advantages -->
+    <section class="advantages">
+        <div class="container">
+            <h2>Why Enterprises Choose Ryno-Tec</h2>
+            <p class="section-subtitle">Competitive advantages built on real-world experience and proven delivery capability.</p>
+
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-number">1</div>
+                    <h3>Founder-Led Delivery</h3>
+                    <p>Led by founding engineer with 10+ years hands-on enterprise infrastructure experience. Not sales-focused—technical expertise drives every engagement.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-number">2</div>
+                    <h3>Built Solutions, Not Just Advice</h3>
+                    <p>We've designed and delivered enterprise-grade infrastructure solutions from the ground up. Our expertise is proven through real implementations, not theoretical knowledge.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-number">3</div>
+                    <h3>South African Market Expertise</h3>
+                    <p>Deep understanding of local compliance requirements (POPIA, B-BBEE), regulatory environment, and enterprise context. Specialized in financial services sector challenges.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-number">4</div>
+                    <h3>Cost-Effective Implementation</h3>
+                    <p>No overhead structures. We deliver high-quality infrastructure solutions at competitive rates. Direct access to senior technical expertise on every project.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-number">5</div>
+                    <h3>Integrated Expertise</h3>
+                    <p>Rare combination of platform engineering, modern workplace management, and AI infrastructure expertise. Single point of contact for complex, multi-domain projects.</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-number">6</div>
+                    <h3>Enterprise-Grade Quality</h3>
+                    <p>Proven ability to design and manage mission-critical infrastructure at scale. 5000+ active users across deployed solutions with 99.9%+ uptime targets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Meet the Team</h2>
+            <p class="section-subtitle">Our team combines deep technical expertise with proven enterprise delivery capability.</p>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-member-header">
+                        <div class="team-member-name">Kagiso Tshukudu</div>
+                    </div>
+                    <div class="team-member-body">
+                        <div class="team-member-title">Founder & Principal Engineer</div>
+                        <div class="team-member-experience">
+                            10+ years of enterprise infrastructure and modern workplace engineering. Currently Senior Infrastructure Engineer at leading financial services organization. Hands-on expertise in designing and deploying infrastructure solutions serving 5000+ users across multiple mission-critical systems.
+                        </div>
+                        <div class="expertise-list">
+                            <p>Core Expertise</p>
+                            <ul class="expertise-items">
+                                <li>Infrastructure as Code (Bicep, ARM, Terraform)</li>
+                                <li>Azure Platform Architecture (AVD, Entra ID, Intune)</li>
+                                <li>Platform Engineering & DevOps</li>
+                                <li>MLOps & AI Infrastructure</li>
+                                <li>Enterprise Compliance (POPIA, B-BBEE)</li>
+                                <li>Financial Services Domain Expertise</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Infrastructure?</h2>
+            <p>Let's discuss how Ryno-Tec Consulting can help your organization achieve its infrastructure and digital transformation objectives.</p>
+            <div style="margin-top: 2rem;">
+                <a href="mailto:kagiso@ryno-tec.co.za" class="btn btn-primary">Send Inquiry</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Ryno-Tec Consulting</h4>
+                <p>Enterprise Infrastructure & Platform Engineering</p>
+                <p>Johannesburg, South Africa</p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <a href="#expertise">Platform Engineering</a><br>
+                <a href="#expertise">Azure Modern Workplace</a><br>
+                <a href="#expertise">AI Infrastructure & MLOps</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <a href="mailto:kagiso@ryno-tec.co.za">kagiso@ryno-tec.co.za</a><br>
+                <p>Direct inquiries welcomed</p>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <a href="#">LinkedIn</a><br>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ryno-Tec Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

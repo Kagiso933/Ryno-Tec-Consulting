@@ -1,0 +1,58 @@
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Build artifacts
+dist/
+build/
+*.o
+*.so
+*.dll
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Sensitive
+*.key
+*.pem
+*.p12
+secrets.txt
+credentials.json
+
+# Test coverage
+coverage/
+.coverage
+htmlcov/
+
+# IDE specific
+.eslintcache
+.prettier-ignore
