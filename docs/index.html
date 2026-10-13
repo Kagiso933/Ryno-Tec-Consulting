@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryno-Tec Consulting | Enterprise Infrastructure & Platform Engineering</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"%3E%3Crect width="64" height="64" rx="14" fill="%231a1a1a"/%3E%3Csvg x="7" y="7" width="50" height="50" viewBox="50 -10 320 320"%3E%3Cpath d="M80 300 V80 H200 L240 120 V190 L200 230 H80" fill="none" stroke="%23ffffff" stroke-width="46" stroke-linejoin="miter"/%3E%3Cpath d="M155 230 L340 280" fill="none" stroke="%23ffffff" stroke-width="46"/%3E%3Cpath d="M254.1 226.4 L341.1 249.2" fill="none" stroke="%23ff6b35" stroke-width="40"/%3E%3Cpolygon points="313.6,245.9 351.2,136.4 347.6,134.6 281.6,229.7" fill="%23ff6b35"/%3E%3C/svg%3E%3C/svg%3E">
+    <meta name="theme-color" content="#1a1a1a">
     <style>
         * {
             margin: 0;
@@ -52,10 +54,33 @@
         }
 
         .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.7rem;
             font-size: 1.25rem;
-            font-weight: 600;
+            font-weight: 700;
             letter-spacing: 0.5px;
             color: white;
+            text-decoration: none;
+        }
+
+        .logo-mark {
+            width: 38px;
+            height: 38px;
+            flex-shrink: 0;
+        }
+
+        .logo-sub {
+            font-weight: 400;
+            color: #cbd5e1;
+        }
+
+        .footer-mark {
+            width: 44px;
+            height: 44px;
+            color: white;
+            margin-bottom: 0.75rem;
+            display: block;
         }
 
         nav ul {
@@ -245,7 +270,7 @@
 
         .expertise-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
             gap: 2rem;
             max-width: 1400px;
             margin: 0 auto;
@@ -307,7 +332,7 @@
 
         .solutions-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
             gap: 2.5rem;
             max-width: 1400px;
             margin: 0 auto;
@@ -410,7 +435,7 @@
 
         .advantages-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
             gap: 2rem;
             max-width: 1400px;
             margin: 0 auto;
@@ -464,7 +489,7 @@
 
         .team-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
             gap: 3rem;
             max-width: 1400px;
             margin: 0 auto;
@@ -578,7 +603,7 @@
             max-width: 1400px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
             gap: 3rem;
             margin-bottom: 3rem;
         }
@@ -639,14 +664,146 @@
                 text-align: center;
             }
         }
+        /* Base mobile safety */
+        html, body {
+            overflow-x: hidden;
+        }
+
+        img, svg {
+            max-width: 100%;
+        }
+
+        h1, h2, h3 {
+            overflow-wrap: break-word;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 6px;
+            color: white;
+            width: 44px;
+            height: 44px;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .nav-cta {
+            white-space: nowrap;
+        }
+
+        @media (max-width: 900px) {
+            nav {
+                padding: 0.75rem 1.25rem;
+                position: relative;
+            }
+
+            .menu-toggle {
+                display: inline-flex;
+            }
+
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                gap: 0;
+                background: var(--primary);
+                padding: 0.5rem 1.25rem 1.25rem;
+                border-top: 1px solid rgba(255,255,255,0.1);
+                box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+            }
+
+            nav ul.open {
+                display: flex;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 0.85rem 0;
+                font-size: 1rem;
+                border-bottom: 1px solid rgba(255,255,255,0.08);
+            }
+
+            nav ul li a.nav-cta {
+                margin-top: 0.75rem;
+                padding: 0.85rem 1rem;
+                text-align: center;
+                border-bottom: none;
+            }
+
+            .logo {
+                font-size: 1.1rem;
+            }
+
+            .logo-mark {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 4rem 1.25rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+                line-height: 1.15;
+            }
+
+            section {
+                padding-left: 1.25rem !important;
+                padding-right: 1.25rem !important;
+                padding-top: 3.5rem !important;
+                padding-bottom: 3.5rem !important;
+            }
+
+            .container {
+                padding: 0;
+            }
+
+            section h2 {
+                font-size: 1.75rem;
+                line-height: 1.2;
+            }
+
+            .expertise-card,
+            .solution-header,
+            .solution-body,
+            .team-member-header,
+            .team-member-body {
+                padding: 1.25rem;
+            }
+
+            footer {
+                padding: 2.5rem 1.25rem;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .logo-sub {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <header>
         <nav>
-            <div class="logo">Ryno-Tec Consulting</div>
-            <ul>
+            <a href="#" class="logo" aria-label="Ryno-Tec Consulting home">
+                <svg class="logo-mark" viewBox="50 -10 320 320" aria-hidden="true"><path d="M80 300 V80 H200 L240 120 V190 L200 230 H80" fill="none" stroke="currentColor" stroke-width="40" stroke-linejoin="miter"/><path d="M155 230 L340 280" fill="none" stroke="currentColor" stroke-width="40"/><path d="M146 12 H96 V60 H146" fill="none" stroke="currentColor" stroke-width="28" stroke-linejoin="miter"/><path d="M254.1 226.4 L341.1 249.2" fill="none" stroke="#ff6b35" stroke-width="34"/><polygon points="313.6,245.9 351.2,136.4 347.6,134.6 281.6,229.7" fill="#ff6b35"/></svg>
+                <span class="logo-text">Ryno-Tec <span class="logo-sub">Consulting</span></span>
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">
+                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <ul id="site-menu">
                 <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#solutions">Solutions</a></li>
                 <li><a href="#team">Team</a></li>
@@ -994,6 +1151,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
+                <svg class="footer-mark" viewBox="50 -10 320 320" aria-hidden="true"><path d="M80 300 V80 H200 L240 120 V190 L200 230 H80" fill="none" stroke="currentColor" stroke-width="38" stroke-linejoin="miter"/><path d="M155 230 L340 280" fill="none" stroke="currentColor" stroke-width="38"/><path d="M146 12 H96 V60 H146" fill="none" stroke="currentColor" stroke-width="26" stroke-linejoin="miter"/><rect x="183" y="139" width="22" height="22" fill="currentColor"/><path d="M254.1 226.4 L341.1 249.2" fill="none" stroke="#ff6b35" stroke-width="30"/><polygon points="313.6,245.9 351.2,136.4 347.6,134.6 281.6,229.7" fill="#ff6b35"/></svg>
                 <h4>Ryno-Tec Consulting</h4>
                 <p>Enterprise Infrastructure & Platform Engineering</p>
                 <p>Johannesburg, South Africa</p>
@@ -1024,5 +1182,20 @@
             <p>&copy; 2026 Ryno-Tec Consulting. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        (function () {
+            var btn = document.querySelector('.menu-toggle');
+            var menu = document.getElementById('site-menu');
+            if (!btn || !menu) return;
+            function setOpen(open) {
+                menu.classList.toggle('open', open);
+                btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+                btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+            }
+            btn.addEventListener('click', function () { setOpen(!menu.classList.contains('open')); });
+            menu.addEventListener('click', function (e) { if (e.target.closest('a')) setOpen(false); });
+            window.addEventListener('resize', function () { if (window.innerWidth > 900) setOpen(false); });
+        })();
+    </script>
 </body>
 </html>
