@@ -87,10 +87,10 @@ ryno-tec-consulting/
 
 ```bash
 # Create or edit markdown files
-nano docs/business-plan/03-market-analysis.md
+nano internal/business-plan/03-market-analysis.md
 
 # Or open in your editor
-code docs/business-plan/
+code internal/business-plan/
 ```
 
 #### 2. Commit Changes
@@ -100,7 +100,7 @@ code docs/business-plan/
 git add .
 
 # Or stage specific files
-git add docs/business-plan/03-market-analysis.md
+git add internal/business-plan/03-market-analysis.md
 
 # Commit with clear message
 git commit -m "docs: Add market analysis section

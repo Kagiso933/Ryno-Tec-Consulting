@@ -50,9 +50,9 @@ Complete materials for investor presentations and due diligence.
 Production-ready module for professional financial document generation.
 
 **Quick Links:**
-- 📖 [Full Module Documentation](./modules/INVOICE-QUOTE-GENERATOR.md)
-- 📦 [Module README](../modules/README.md)
-- 💻 [Python Implementation](../modules/invoice-quote-generator/generator.py)
+- 📖 [Full Module Documentation](./doc-modules/INVOICE-QUOTE-GENERATOR.md)
+- 📦 [Module README](../doc-modules/README.md)
+- 💻 [Python Implementation](../doc-modules/invoice-quote-generator/generator.py)
 
 **Key Features:**
 - Professional quote generation with Ryno-Tec service templates
@@ -120,9 +120,9 @@ quote.generate_pdf("quote.pdf")
 4. [GitHub Setup Guide](./.github/GITHUB-SETUP.md) - How to organize work
 
 **For Technical Integration:**
-1. [Invoice & Quote Generator Module Documentation](./modules/INVOICE-QUOTE-GENERATOR.md)
-2. [Module README](../modules/README.md) - Usage and integration
-3. [Python Implementation](../modules/invoice-quote-generator/generator.py) - Source code
+1. [Invoice & Quote Generator Module Documentation](./doc-modules/INVOICE-QUOTE-GENERATOR.md)
+2. [Module README](../doc-modules/README.md) - Usage and integration
+3. [Python Implementation](../doc-modules/invoice-quote-generator/generator.py) - Source code
 
 ### By Time Horizon
 
